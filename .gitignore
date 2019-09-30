@@ -26,3 +26,4 @@ yarn-debug.log*
 yarn-error.log*
 
 kubernetes-dashboard.yaml
+skaffold.yaml
