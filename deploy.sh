@@ -1,6 +1,6 @@
-docker build -t jwbonnell/fib-react-client:latest -t jwbonnell:fib-react-client:$SHA -f ./client/Dockerfile ./client
-docker build -t jwbonnell/fib-react-server:latest -t jwbonnell:fib-react-server:$SHA -f ./server/Dockerfile ./server
-docker build -t jwbonnell/fib-react-worker:latest -t jwbonnell:fib-react-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t jwbonnell/fib-react-client:latest -t jwbonnell/fib-react-client:$SHA -f ./client/Dockerfile ./client
+docker build -t jwbonnell/fib-react-server:latest -t jwbonnell/fib-react-server:$SHA -f ./server/Dockerfile ./server
+docker build -t jwbonnell/fib-react-worker:latest -t jwbonnell/fib-react-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push jwbonnell/fib-react-client:latest
 docker push jwbonnell/fib-react-server:latest
