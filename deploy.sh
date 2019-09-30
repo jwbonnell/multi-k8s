@@ -12,6 +12,6 @@ docker push jwbonnell/fib-react-worker:$SHA
 
 
 kubectl apply -f k8s
-kubectl set image deployment/server-deployment server=jwbonnell/fib-react-server:$SHA
-kubectl set image deployment/client-deployment client=jwbonnell/fib-react-client:$SHA
-kubectl set image deployment/worker-deployment worker=jwbonnell/fib-react-worker:$SHA
+kubectl set image deployments/server-deployment server=jwbonnell/fib-react-server:$SHA
+kubectl set image deployments/client-deployment client=jwbonnell/fib-react-client:$SHA
+kubectl set image deployments/worker-deployment worker=jwbonnell/fib-react-worker:$SHA
